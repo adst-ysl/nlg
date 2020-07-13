@@ -1,0 +1,17 @@
+```
+https://www.cnblogs.com/chenxiangzhen/p/10648503.html
+欧氏距离(Euclidean Distance)
+np.sqrt(np.sum(np.square(x-y)))
+余弦相似度(Cosine Similarity)
+np.dot(x,y)/(np.linalg.norm(x)*np.linalg.norm(y))
+皮尔逊相关系数(Pearson Correlation)
+x_=x-np.mean(x)
+y_=y-np.mean(y)
+d1=np.dot(x_,y_)/(np.linalg.norm(x_)*np.linalg.norm(y_))
+
+
+杰卡德相似系数(Jaccard Similarity)
+up=np.double(np.bitwise_and((x != y),np.bitwise_or(x != 0, y != 0)).sum())
+down=np.double(np.bitwise_or(x != 0, y != 0).sum())
+d1=(up/down)
+```
